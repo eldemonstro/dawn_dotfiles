@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rm -rf "$HOME/.dawn_dotfiles"
+
 if [ ! -d "$HOME/.dawn_dotfiles" ]
 then
   echo "This dotfiles is contructed for Ubuntu and is based of campuscode/cc_dotfiles"

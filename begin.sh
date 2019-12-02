@@ -7,7 +7,8 @@ sudo apt-get update
 sudo apt-get install fish
 
 # Use fish as default shell
-chsh -s /usr/local/bin/fish
+echo 'Changing your shell to fish'
+chsh -s $(which fish)
 
 # Installing oh-my-fish
 curl -L https://get.oh-my.fish | fish
