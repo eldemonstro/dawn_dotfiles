@@ -11,7 +11,8 @@ echo 'Changing your shell to fish'
 chsh -s $(which fish)
 
 # Installing oh-my-fish
-curl -L https://get.oh-my.fish | fish
+# curl -L https://get.oh-my.fish | fish
+fish
 
 # Installing eldemonstro/theme-toaster fish theme
 omf install eldemonstro/theme-toaster
