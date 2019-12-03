@@ -16,7 +16,7 @@ fish -c "omf theme toaster"
 echo "SETUVAR fish_prompt_pwd_dir_length:20" >> "$HOME/.config/fish/fish_variables"
 
 # Copying aliases to fish
-cp "$PWD/aliases.fish" "$HOME/.config/fish/aliases.fish"
+cp -TRv "$PWD/aliases.fish" "$HOME/.config/fish/aliases.fish"
 
 # Install fisher and its plugins
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
@@ -25,7 +25,7 @@ fish -c "fisher add barnybug/docker-fish-completion"
 fish -c "fisher add nickeb96/expanddots"
 
 # Copying config to fish
-cp "$PWD/config.fish" "$HOME/.config/fish/config.fish"
+cp -TRv "$PWD/config.fish" "$HOME/.config/fish/config.fish"
 
 # Use fish as default shell
 echo 'Changing your shell to fish'
