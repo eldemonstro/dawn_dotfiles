@@ -11,7 +11,8 @@ chsh -s $(which fish)
 curl -L https://get.oh-my.fish | fish
 
 # Installing eldemonstro/theme-toaster fish theme
-fish -c "omf install eldemonstro/theme-toaster"
+fish -c "omf install https://github.com/eldemonstro/theme-toaster"
+fish -c "omf install thefuck"
 
 # Echoing PWD dir size to fish config
 echo "SETUVAR fish_prompt_pwd_dir_length:20" >> "$HOME/.config/fish/fish_variables"
@@ -21,9 +22,9 @@ cp "$PWD/aliases.fish" "$HOME/.config/fish/aliases.fish"
 
 # Install fisher and its plugins
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-fish -c "fisher brgmnn/fish-docker-compose"
-fish -c "fisher barnybug/docker-fish-completion"
-fish -c "fisher nickeb96/expanddots"
+fish -c "fisher add brgmnn/fish-docker-compose"
+fish -c "fisher add barnybug/docker-fish-completion"
+fish -c "fisher add nickeb96/expanddots"
 
 # Copying greeting to fish
 cp "$PWD/fish_greeting.fish" "$HOME/.config/fish/functions/fish_greeting.fish"
