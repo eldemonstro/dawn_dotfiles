@@ -1,11 +1,8 @@
 # Installing fish
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update
-sudo apt-get install fish fortune
-
-# Use fish as default shell
-echo 'Changing your shell to fish'
-chsh -s $(which fish)
+sudo apt-get install fish fortune python3-dev python3-pip python3-setuptools
+sudo pip3 install thefuck
 
 # Installing oh-my-fish
 curl -L https://get.oh-my.fish | fish
@@ -31,3 +28,7 @@ cp "$PWD/fish_greeting.fish" "$HOME/.config/fish/functions/fish_greeting.fish"
 
 # Copying config to fish
 cp "$PWD/config.fish" "$HOME/.config/fish/config.fish"
+
+# Use fish as default shell
+echo 'Changing your shell to fish'
+chsh -s $(which fish)
