@@ -195,3 +195,7 @@ end
 function gpsh -d 'Pushes the current branch to origin remote, can receive --force if necessary'
   git push -u origin (git rev-parse --abbrev-ref HEAD) $argv
 end
+
+function bitbucket --description 'Opens bitbucket dashboard overview'
+	google-chrome https://bitbucket.org/dashboard/overview
+end
