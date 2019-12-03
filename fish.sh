@@ -18,6 +18,9 @@ echo "SETUVAR fish_prompt_pwd_dir_length:20" >> "$HOME/.config/fish/fish_variabl
 # Copying aliases to fish
 cp -TRv "$PWD/aliases.fish" "$HOME/.config/fish/aliases.fish"
 
+# Copying greeting to fish
+cp -TRv "$PWD/fish_greeting.fish" "$HOME/.config/fish/functions/fish_greeting.fish"
+
 # Install fisher and its plugins
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 fish -c "fisher add brgmnn/fish-docker-compose"
