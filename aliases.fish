@@ -145,9 +145,6 @@ alias rsb='rails s -b 0.0.0.0'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-# Homebrew
-alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
-
 # vim: ft=zsh
 
 # Local Aliases
@@ -162,9 +159,6 @@ alias dcdown='docker-compose down'
 
 alias myprecious='sudo chown (whoami) -R .'
 
-alias updateme='sudo apt-get update && sudo apt-get upgrade && sudo apt-get \
-dist-upgrade && sudo do-release-upgrade -d'
-
 alias cd..='cd ..'
 
 alias dcr='docker-compose run --rm --service-ports'
@@ -174,8 +168,6 @@ alias drmi='docker rmi'
 alias dbash='docker-compose run --rm --service-ports web bash'
 
 alias dcd='docker-compose down'
-
-alias gamquick='ga && gam --no-edit'
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
