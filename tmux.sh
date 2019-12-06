@@ -5,4 +5,4 @@ cp -TRv "$PWD/bin" "$HOME/.bin"
 
 # Installing tmux
 sudo apt-get update
-sudo apt-get install tmux
+sudo apt-get install tmux -y

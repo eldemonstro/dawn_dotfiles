@@ -1,7 +1,7 @@
 # Installing fish
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update
-sudo apt-get install fish fortune python3-dev python3-pip python3-setuptools
+sudo apt-get -y install fish fortune python3-dev python3-pip python3-setuptools
 sudo pip3 install thefuck
 
 # Installing oh-my-fish
