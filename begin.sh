@@ -12,4 +12,4 @@ sh "$PWD/vim.sh"
 
 echo 'Install theme'
 git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git "$PWD/theme"
-~/theme/install.sh
+~/.dawn_dotfiles/theme/install.sh
