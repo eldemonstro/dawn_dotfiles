@@ -5,7 +5,8 @@ sudo apt-get -y install fish fortune python3-dev python3-pip python3-setuptools
 sudo pip3 install thefuck
 
 # Installing oh-my-fish
-curl -L https://get.oh-my.fish | fish
+curl -L https://get.oh-my.fish > install
+fish -c "install --path=~/.local/share/omf --config=~/.config/omf"
 
 # Installing eldemonstro/theme-toaster fish theme
 fish -c "omf install https://github.com/eldemonstro/theme-toaster"
