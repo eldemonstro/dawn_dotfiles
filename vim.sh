@@ -5,4 +5,4 @@ cp -TRv "$PWD/vim" "$HOME/.vim"
 
 # Installing vim and its dependencies
 sudo apt-get update
-sudo apt-get install vim silversearcher-ag dconf-cli vim-gnome -y
+sudo apt-get install vim silversearcher-ag dconf-cli vim-gtk3 -y

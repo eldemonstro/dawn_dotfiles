@@ -36,6 +36,10 @@ then
   git clone --depth=10 https://github.com/eldemonstro/dawn_dotfiles.git "$HOME/.dawn_dotfiles"
   cd "$HOME/.dawn_dotfiles"
   sh "begin.sh"
+
+  # Use fish as default shell
+  echo 'Changing your shell to fish'
+  chsh -s $(which fish)
 else
   echo "You already have Dawn Dotfiles installed"
 fi

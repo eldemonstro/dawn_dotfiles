@@ -29,7 +29,3 @@ fish -c "fisher add nickeb96/expanddots"
 
 # Copying config to fish
 cp -TRv "$PWD/config.fish" "$HOME/.config/fish/config.fish"
-
-# Use fish as default shell
-echo 'Changing your shell to fish'
-chsh -s $(which fish)
